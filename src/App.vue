@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <!-- TIDAK PERLU MENGINISIALISASI PROP DI COMPONENT KARNA DATA DIAMBIL LANGSUNG DARI STORE -->
+    <ProdukSatu/>
+    <ProdukDua/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import ProdukSatu from './components/ProdukSatu.vue'
+import ProdukDua from './components/ProdukDua.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    // HelloWorld
+    ProdukSatu,
+    ProdukDua
+  },
+  data() {
+    return {
+      
+    }
+  },
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ 
 }
 </style>
